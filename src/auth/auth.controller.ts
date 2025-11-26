@@ -1,10 +1,10 @@
 import { Body, Controller, Post, Req, Res, UnauthorizedException } from '@nestjs/common';
 import type { Request, Response } from 'express';
 import { AuthService } from './auth.service';
-import { ZodValidationPipe } from 'src/common/pipes/zod-validation.pipe';
-import { CreateUserSchema } from 'src/user/userDto/userSchema.dto';
+import { ZodValidationPipe } from '../common/pipes/zod-validation.pipe';
+import { CreateUserSchema } from '../user/userDto/userSchema.dto';
 import type { TLogin, TRegistration } from './authDto/authSchema';
-import { sendResponse } from 'src/common/utils/sendResponse';
+import { sendResponse } from '../common/utils/sendResponse';
 import { LoginSchema } from './authDto/authDto.dto';
 
 @Controller('auth')

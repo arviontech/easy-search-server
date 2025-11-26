@@ -8,7 +8,7 @@ import { JwtService, JwtSignOptions } from '@nestjs/jwt';
 import { PrismaService } from '../prisma/prisma.service';
 import bcrypt from 'bcryptjs';
 import { UserRole } from '@prisma/client';
-import configuration from 'src/config/configuration';
+import configuration from '../config/configuration';
 import { TLogin, TRegistration } from './authDto/authSchema';
 
 @Injectable()
