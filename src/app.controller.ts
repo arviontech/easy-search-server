@@ -8,7 +8,7 @@ export class AppController {
         return {
             code: 200,
             success: true,
-            message: 'Welcome to Easy Search server',
+            message: 'Welcome to Easy Search serverrr',
         }
     }
 }
